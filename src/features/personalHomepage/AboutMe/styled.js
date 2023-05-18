@@ -22,9 +22,7 @@ export const Header = styled.h1`
 `;
 
 export const Content = styled.div`
-  display: grid;
-  grid-template-rows: 1fr;
-  justify-items: flex-start;  
+ 
 `;
 
 export const Text = styled.p`
@@ -38,4 +36,19 @@ export const Container = styled.div`
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 64px;
+`;
+
+export const MailButton = styled.a`
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  max-width: fit-content;
+  margin: 32px 0 0 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  font-size: 20px;
+  color: ${({ theme }) => theme.color.white};
+  text-decoration: none;
+  background-color: ${({ theme }) => theme.color.scienceBlue};
 `;
