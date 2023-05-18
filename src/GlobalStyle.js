@@ -12,8 +12,8 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: ${({ theme }) => theme.color.whiteLilac};
         font-family: 'Inter', sans-serif;
-        max-width: 1216px;
-        margin: auto;
+        font-style: normal;
+        font-weight: 400;
         font-size: 18px;
         letter-spacing: 0.05em;
         color: ${({ theme }) => theme.color.slateGray};

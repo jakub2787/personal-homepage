@@ -32,3 +32,10 @@ export const Text = styled.p`
   line-height: 1.4;
   margin: 36px 0 0 0;
 `;
+
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 64px;
+`;

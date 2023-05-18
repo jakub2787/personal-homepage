@@ -6,6 +6,7 @@ export const theme = {
         white: "#FFFFFF",
         mercury: "#E5E5E5",
         whiteLilac: "#FBFBFE",
+        iron: "#D1D5DA",
     },
     breakpoint: {
         mobileMax: 767,
