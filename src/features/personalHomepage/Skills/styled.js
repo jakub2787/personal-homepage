@@ -7,6 +7,11 @@ export const List = styled.ul`
   gap: 8px 32px;
   padding: 0;
   margin-top: 32px;
+  
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ListItem = styled.li`

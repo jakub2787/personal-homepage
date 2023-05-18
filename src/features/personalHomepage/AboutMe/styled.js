@@ -5,6 +5,11 @@ export const Image = styled.img`
   height: 398px;
   border-radius: 50%;
   margin-top: 20px;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    width: 132.67px;
+    height: 132.67px;
+}
 `;
 
 export const Info = styled.p`
@@ -29,6 +34,10 @@ export const Text = styled.p`
   font-weight: 400;
   line-height: 1.4;
   margin: 36px 0 0 0;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    margin: 16px 0 0 0; 
+}
 `;
 
 export const Container = styled.div`
@@ -36,6 +45,12 @@ export const Container = styled.div`
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 64px;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px ;
+}
 `;
 
 export const MailButton = styled.a`
