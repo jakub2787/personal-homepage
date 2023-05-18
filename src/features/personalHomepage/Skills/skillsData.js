@@ -1,9 +1,9 @@
 export const skillsList = [
-  "Semantic & accessibe HTML",
+  "Semantic & accessible HTML",
   "Responsive Web Design",
   "TeamWork",
   "Markdown",
-  "Immutabilty",
+  "Immutability",
   "CSS BEM convention",
   "CSS Grid",
   "CSS Flexbox",
