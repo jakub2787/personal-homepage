@@ -1,4 +1,5 @@
 import { List, ListItem, SectionHeader, StyledContainer } from "./styled";
+import { nanoid } from 'nanoid';
 
 const SkillsList = ({ skills, tittle }) => {
     return (
@@ -7,7 +8,11 @@ const SkillsList = ({ skills, tittle }) => {
                 <SectionHeader>{tittle}</SectionHeader>
                 <List>
                     {skills.map((skill) => (
-                        <ListItem>{skill}</ListItem>
+                        <ListItem
+                            key={skill}
+                        >
+                            {skill}
+                        </ListItem>
                     ))}
                 </List>
             </StyledContainer>
