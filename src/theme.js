@@ -9,6 +9,8 @@ export const theme = {
         iron: "#D1D5DA",
     },
     breakpoint: {
-        mobileMax: 767,
+        mobileMax: 776,
+        tabletMax: 1124,
+        tabletMin: 777,
     },
 };

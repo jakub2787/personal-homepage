@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const Image = styled.img`
-  width: 398px;
-  height: 398px;
+  max-width: 398px;
   border-radius: 50%;
   margin-top: 20px;
 
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
-    width: 132.67px;
-    height: 132.67px;
+    max-width: 132.67px;
 }
 `;
 
