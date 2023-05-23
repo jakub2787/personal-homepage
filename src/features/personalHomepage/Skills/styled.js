@@ -24,15 +24,14 @@ export const ListItem = styled.li`
   
   &::before {
     content: "●";
-    color: ${({ theme }) => theme.color.scienceBlue};
+    color: ${({ theme }) => theme.colors.primary};
     padding-right: 16px;
   }
 `;
 
 export const StyledContainer = styled.section`
-  background-color: red;
   margin: 63px 0 0 0;
-  background-color: ${({ theme }) => theme.color.white};
+  background-color: ${({ theme }) => theme.colors.boxBackground};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
   padding: 32px;
@@ -41,8 +40,8 @@ export const StyledContainer = styled.section`
 export const SectionHeader = styled.h2`
   font-weight: 900;
   font-size: 30px;
-  color: ${({ theme }) => theme.color.mineShaft};
-  border-bottom: 1px solid ${({ theme }) => theme.color.iron};
+  color: ${({ theme }) => theme.colors.textPrimary};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};
   padding-bottom: 16px;
   margin: 0px;
 `;

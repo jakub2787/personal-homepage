@@ -2,7 +2,7 @@ import { Image, Content, Header, Info, Text, Container, MailButton } from "./sty
 import AutorPhoto from "../images/AuthorPhoto.jpg";
 import { ReactComponent as MailIcon } from '../images/Message.svg';
 
-const AboutMe = () => {
+const SectionHeader = () => {
     return (
         <>
             <Container>
@@ -21,4 +21,4 @@ const AboutMe = () => {
     )
 };
 
-export default AboutMe;
+export default SectionHeader;

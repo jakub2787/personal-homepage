@@ -1,5 +1,4 @@
 import { List, ListItem, SectionHeader, StyledContainer } from "./styled";
-import { nanoid } from 'nanoid';
 
 const SkillsList = ({ skills, tittle }) => {
     return (

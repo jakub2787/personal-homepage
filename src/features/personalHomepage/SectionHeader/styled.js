@@ -20,7 +20,7 @@ export const Info = styled.p`
 export const Header = styled.h1`
   font-weight: 900;
   font-size: 38px;
-  color: ${({ theme }) => theme.color.mineShaft};
+  color: ${({ theme }) => theme.colors.textPrimary};
   margin: 12px 0 0 0;
 `;
 
@@ -61,7 +61,7 @@ export const MailButton = styled.a`
   grid-template-columns: auto 1fr;
   align-items: center;
   font-size: 20px;
-  color: ${({ theme }) => theme.color.white};
+  color: ${({ theme }) => theme.colors.buttonLink.text};
   text-decoration: none;
-  background-color: ${({ theme }) => theme.color.scienceBlue};
+  background-color: ${({ theme }) => theme.colors.buttonLink.background};
 `;

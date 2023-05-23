@@ -10,12 +10,12 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background-color: ${({ theme }) => theme.color.whiteLilac};
+        background-color: ${({ theme }) => theme.colors.site.background};
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         letter-spacing: 0.05em;
-        color: ${({ theme }) => theme.color.slateGray};
+        color: ${({ theme }) => theme.colors.site.text};
     }
 `;
