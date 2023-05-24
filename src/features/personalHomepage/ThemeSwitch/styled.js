@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as Icon } from '../images/buttonIcon.svg';
 
 export const StyledButton = styled.button`
@@ -8,6 +8,7 @@ export const StyledButton = styled.button`
   border-radius: 14px;
   margin-left: 12px;
   background-color: ${({ theme }) => theme.colors.themeSwitch.background};
+  border: 1px solid ${({ theme }) => theme.colors.themeSwitch.border};
 `;
 
 export const ButtonText = styled.span`
@@ -24,10 +25,20 @@ export const Container = styled.div`
 
 export const ButtonIcon = styled(Icon)`
   color: ${({ theme }) => theme.colors.themeSwitch.colorIcon};
+`;
+
+export const Box = styled.span`
   background-color: ${({ theme }) => theme.colors.themeSwitch.backgroundIcon};
   border-radius: 100%;
-  display: flex;
-  justify-content: flex-start;
   width: 20px;
   height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+
+  ${({ moveSwitch }) => moveSwitch && css`
+  transform: translateX(22px);
+    `}
 `;
+

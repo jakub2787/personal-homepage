@@ -1,18 +1,19 @@
 import { useDispatch, useSelector } from "react-redux";
-import { ButtonText, StyledButton, Container, ButtonIcon } from "./styled";
-import { selectIsDarkTheme, toggleTheme, } from "./themeSlice";
-
+import { ButtonText, StyledButton, Container, ButtonIcon, Box } from "./styled";
+import { selectModeSwitch, toggleTheme, } from "./themeSlice";
 
 const Buttton = () => {
     const dispatch = useDispatch();
-    const darkMode = useSelector(selectIsDarkTheme);
+    const isDarkMode = useSelector(selectModeSwitch);
 
     return (
         <>
             <Container>
-                <ButtonText>{darkMode ? "Dark mode on" : "Dark mode off"}</ButtonText>
+                <ButtonText>Dark mode {isDarkMode ? "on" : "off"}</ButtonText>
                 <StyledButton onClick={() => (dispatch(toggleTheme()))}>
-                    <ButtonIcon />      
+                    <Box moveSwitch={!isDarkMode} >
+                    <ButtonIcon /> 
+                    </Box>        
                 </StyledButton>
             </Container>
         </>

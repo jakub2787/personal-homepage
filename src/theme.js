@@ -8,6 +8,7 @@ const colorName = {
     iron: "#D1D5DA",
     dodgerBlue: "#2188FF",
     mineShaftLighter: "#313131",
+    doveGray: "#686868",
 };
 
 const commonTheme = {
@@ -37,6 +38,7 @@ export const lightTheme = {
             background: colorName.mercury,
             backgroundIcon: colorName.slateGray,
             colorIcon: colorName.white,
+            border: colorName.iron,
         },
     },
 };
@@ -57,9 +59,10 @@ export const darkTheme = {
         headerLine: colorName.iron,
         boxBackground: colorName.mineShaftLighter,
         themeSwitch: {
-            background: colorName.mineShaftLighter,
+            background: colorName.doveGray,
             backgroundIcon: colorName.white,
             colorIcon: colorName.mineShaft,
+            border: colorName.iron,
         },
     },
 };
