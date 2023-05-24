@@ -33,6 +33,7 @@ export const lightTheme = {
         buttonLink: {
             background: colorName.scienceBlue,
             text: colorName.white,
+            border: colorName.cornflowerBlue
         },
         headerLine: colorName.mercury,
         boxBackground: colorName.white,
@@ -58,6 +59,7 @@ export const darkTheme = {
         buttonLink: {
             background: colorName.dodgerBlue,
             text: colorName.white,
+            border: colorName.shipCove
         },
         headerLine: colorName.iron,
         boxBackground: colorName.mineShaftLighter,

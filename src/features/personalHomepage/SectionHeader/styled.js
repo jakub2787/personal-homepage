@@ -65,8 +65,12 @@ export const MailButton = styled.a`
   color: ${({ theme }) => theme.colors.buttonLink.text};
   text-decoration: none;
   background-color: ${({ theme }) => theme.colors.buttonLink.background};
+  
+  &:hover {
+    box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonLink.border};
+  }
 `;
 
 export const MailIcon = styled(Icon)`
-  margin-right: 12px;
+  margin-right: 18px;
 `;

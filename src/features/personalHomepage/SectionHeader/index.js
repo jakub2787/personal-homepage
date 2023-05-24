@@ -1,7 +1,6 @@
 import { Image, Content, Header, Info, Text, Container, MailButton, MailIcon } from "./styled";
 import AutorPhoto from "../images/AuthorPhoto.jpg";
 
-
 const SectionHeader = () => {
     return (
         <>
@@ -12,7 +11,7 @@ const SectionHeader = () => {
                     <Header>Jakub Woźny</Header>
                     <Text>👨🏻‍💻  I’m a passionate Frontend Developer in love with React,<br /> currently looking for new job opportunities.</Text>
                     <MailButton href="mailto:jakubwozny28@gmail.com">
-                        <MailIcon /> &nbsp;Hire me
+                        <MailIcon />Hire me
                     </MailButton>
                 </Content>
             </Container>
