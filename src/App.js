@@ -3,20 +3,20 @@ import Container from "./features/personalHomepage/Container";
 import Section from "./features/personalHomepage/Section";
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './theme';
-import {  selectModeSwitch } from "./features/personalHomepage/ThemeSwitch/themeSlice";
+import { selectIsDarkTheme } from "./features/personalHomepage/ThemeSwitch/themeSlice";
 import { useSelector } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
 import SectionHeader from "./features/personalHomepage/SectionHeader";
 
 function App() {
-  const isDarkMode = useSelector(selectModeSwitch);
+  const isDarkMode = useSelector(selectIsDarkTheme);
 
   return (
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Container>
         <Buttton />
-        <SectionHeader/>
+        <SectionHeader />
         <Section />
       </Container>
     </ThemeProvider>
