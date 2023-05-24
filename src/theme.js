@@ -9,6 +9,8 @@ const colorName = {
     dodgerBlue: "#2188FF",
     mineShaftLighter: "#313131",
     doveGray: "#686868",
+    cornflowerBlue: "#6195ED",
+    shipCove: "#6D93BE",
 };
 
 const commonTheme = {
@@ -40,6 +42,7 @@ export const lightTheme = {
             colorIcon: colorName.white,
             border: colorName.iron,
         },
+        footerIcons: colorName.mineShaft,
     },
 };
 
@@ -64,5 +67,6 @@ export const darkTheme = {
             colorIcon: colorName.mineShaft,
             border: colorName.iron,
         },
+        footerIcons: colorName.white,
     },
 };
