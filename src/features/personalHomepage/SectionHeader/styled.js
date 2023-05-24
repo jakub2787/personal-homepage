@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Icon } from '../images/Message.svg';
 
 export const Image = styled.img`
   max-width: 398px;
@@ -25,7 +26,6 @@ export const Header = styled.h1`
 `;
 
 export const Content = styled.div`
- 
 `;
 
 export const Text = styled.p`
@@ -56,6 +56,7 @@ export const MailButton = styled.a`
   border-radius: 4px;
   font-weight: 600;
   max-width: fit-content;
+  height: 49px;
   margin: 32px 0 0 0;
   display: grid;
   grid-template-columns: auto 1fr;
@@ -64,4 +65,8 @@ export const MailButton = styled.a`
   color: ${({ theme }) => theme.colors.buttonLink.text};
   text-decoration: none;
   background-color: ${({ theme }) => theme.colors.buttonLink.background};
+`;
+
+export const MailIcon = styled(Icon)`
+  margin-right: 12px;
 `;

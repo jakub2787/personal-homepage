@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         font-weight: 400;
         font-size: 18px;
         letter-spacing: 0.05em;
-        color: ${({ theme }) => theme.colors.site.text};      
+        color: ${({ theme }) => theme.colors.site.text};
+        transition: 1s;
     }
 `;
