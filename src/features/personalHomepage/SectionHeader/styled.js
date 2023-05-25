@@ -2,13 +2,10 @@ import styled from "styled-components";
 import { ReactComponent as Icon } from '../images/Message.svg';
 
 export const Image = styled.img`
-  max-width: 398px;
   border-radius: 50%;
   margin-top: 20px;
-
-  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
-    max-width: 132.67px;
-}
+  max-width: 398px;
+  width: 30vw;
 `;
 
 export const Info = styled.p`
