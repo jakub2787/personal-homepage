@@ -8,6 +8,7 @@ import { useSelector } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
 import SectionHeader from "./features/personalHomepage/SectionHeader";
 import Footer from "./features/personalHomepage/Footer";
+import Portfolio from "./features/personalHomepage/Portfolio";
 
 function App() {
   const isDarkMode = useSelector(selectIsDarkTheme);
@@ -19,6 +20,7 @@ function App() {
         <Buttton />
         <SectionHeader />
         <Section />
+        <Portfolio />
         <Footer />
       </Container>
     </ThemeProvider>
