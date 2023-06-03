@@ -1,17 +1,19 @@
 import createSagaMiddleware from 'redux-saga';
 import { configureStore } from "@reduxjs/toolkit";
 import themeSlice from "./features/personalHomepage/ThemeSwitch/themeSlice";
-import { themeSaga } from "./features/personalHomepage/ThemeSwitch/themeSaga";
+import rootSaga from './rootSaga';
+import portfolioSlice from './features/personalHomepage/Portfolio/portfolioSlice';
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
     reducer: {
         theme: themeSlice,
+        portfolio: portfolioSlice,
     },
     middleware: [sagaMiddleware]
 });
 
-sagaMiddleware.run(themeSaga);
+sagaMiddleware.run(rootSaga)
 
 export default store;
