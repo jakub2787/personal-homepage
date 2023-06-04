@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   grid-template-columns: auto;
   align-items: center;
   justify-content: center;
+  max-width: 1216px;
 `;
 
 export const PortfolioIcon = styled(Icon)`
@@ -28,4 +29,6 @@ export const Paragraph = styled.p`
   font-size: 20px;
   color: ${({ theme }) => theme.colors.textPrimary};
   margin: 0px;
+  display: grid;
+  justify-content: center;
 `;

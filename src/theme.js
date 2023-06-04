@@ -6,6 +6,8 @@ const colorName = {
     mercury: "#E5E5E5",
     whiteLilac: "#FBFBFE",
     iron: "#D1D5DA",
+    ironLighter: "#d1d5da4d",
+    ironDarker: "#363636b8",
     dodgerBlue: "#2188FF",
     mineShaftLighter: "#313131",
     doveGray: "#686868",
@@ -44,6 +46,12 @@ export const lightTheme = {
             border: colorName.iron,
         },
         footerIcons: colorName.mineShaft,
+        repositoriesList: {
+            header: colorName.scienceBlue,
+            text: colorName.slateGray,
+            link: colorName.scienceBlue,
+            border: colorName.ironLighter,
+        },
     },
 };
 
@@ -70,5 +78,11 @@ export const darkTheme = {
             border: colorName.iron,
         },
         footerIcons: colorName.white,
+        repositoriesList: {
+            header: colorName.white,
+            text: colorName.white,
+            link: colorName.dodgerBlue,
+            border: colorName.ironDarker,
+        },
     },
 };
