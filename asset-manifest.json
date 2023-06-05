@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.a1062998.js",
+    "main.js": "/personal-homepage/static/js/main.6a633fb4.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/AuthorPhoto.jpg": "/personal-homepage/static/media/AuthorPhoto.d9939d9564f340dac485.jpg",
     "static/media/InstagramIcon.svg": "/personal-homepage/static/media/InstagramIcon.1bfc2e98c3e2c4d71326c2ab4626eadb.svg",
     "static/media/GithubIcon.svg": "/personal-homepage/static/media/GithubIcon.8cb288f7695ebf4faf8ece1e61e5fcfc.svg",
     "static/media/buttonIcon.svg": "/personal-homepage/static/media/buttonIcon.fa345c66237310dcb9f60385c73f8c06.svg",
     "index.html": "/personal-homepage/index.html",
+    "static/media/mark-github.svg": "/personal-homepage/static/media/mark-github.a9062bf9626a38e8866f20e84ee3d71b.svg",
     "static/media/LinkedinIcon.svg": "/personal-homepage/static/media/LinkedinIcon.856fea87a0beddb4da5b790b2aa4f718.svg",
     "static/media/Message.svg": "/personal-homepage/static/media/Message.bec00aedf0fc456f7c63ef572ad0f362.svg",
     "static/media/FacebookIcon.svg": "/personal-homepage/static/media/FacebookIcon.4fcd2e5a629788c48eff881bf1586f1a.svg",
-    "main.a1062998.js.map": "/personal-homepage/static/js/main.a1062998.js.map",
+    "main.6a633fb4.js.map": "/personal-homepage/static/js/main.6a633fb4.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a1062998.js"
+    "static/js/main.6a633fb4.js"
   ]
 }
