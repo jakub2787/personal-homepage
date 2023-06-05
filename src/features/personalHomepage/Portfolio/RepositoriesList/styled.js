@@ -14,6 +14,11 @@ export const ListItem = styled.ul`
   border: 6px solid ${({ theme }) => theme.colors.repositoriesList.border};
   border-radius: 4px;
   list-style: none;
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.colors.repositoriesList.borderHover};
+    transition: 1s;
+    }
 `;
 
 export const GridItem = styled.div`
@@ -40,11 +45,23 @@ export const CodeLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.repositoriesList.link};
   margin-bottom: 8px;
+  border-bottom: 1px solid ${({theme}) => theme.colors.repositoriesList.borderLink};
+
+  &:hover {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.linkHover};
+    transition: 1s;
+    }
 `;
 
 export const DemoLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.repositoriesList.link};
+  border-bottom: 1px solid ${({theme}) => theme.colors.repositoriesList.borderLink};
+
+  &:hover {
+    border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.linkHover};
+    transition: 1s;
+    }
 `;
 
 export const DemoSpan = styled.span`
