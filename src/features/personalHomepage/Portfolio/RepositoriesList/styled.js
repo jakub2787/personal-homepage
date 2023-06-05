@@ -45,7 +45,7 @@ export const CodeLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.repositoriesList.link};
   margin-bottom: 8px;
-  border-bottom: 1px solid ${({theme}) => theme.colors.repositoriesList.borderLink};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.borderLink};
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.linkHover};
@@ -56,7 +56,7 @@ export const CodeLink = styled.a`
 export const DemoLink = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.repositoriesList.link};
-  border-bottom: 1px solid ${({theme}) => theme.colors.repositoriesList.borderLink};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.borderLink};
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.colors.repositoriesList.linkHover};

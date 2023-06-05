@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { selectRepos } from "../portfolioSlice";
 import { DemoLink, List, Content, Header, CodeLink, ListItem, GridItem, CodeSpan, DemoSpan } from "./styled";
 
-export const RepositoriesList = () => {
+const RepositoriesList = () => {
     const repos = useSelector(selectRepos);
 
     return (
@@ -12,8 +12,14 @@ export const RepositoriesList = () => {
                     <GridItem>
                         <Header >{repo.name}</Header>
                         <Content >{repo.description}</Content>
-                        <DemoSpan>Demo: <DemoLink href={repo.homepage}>{repo.homepage}</DemoLink></DemoSpan>
-                        <CodeSpan>Code: <CodeLink href={repo.html_url} >{repo.html_url}</CodeLink> </CodeSpan>
+                        <DemoSpan>
+                            Demo:
+                            <DemoLink href={repo.homepage}>{repo.homepage}</DemoLink>
+                        </DemoSpan>
+                        <CodeSpan>
+                            Code:
+                            <CodeLink href={repo.html_url} >{repo.html_url}</CodeLink>
+                        </CodeSpan>
                     </GridItem>
                 </ListItem>
             ))}

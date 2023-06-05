@@ -14,7 +14,7 @@ export const portfolioSlice = createSlice({
         fetchPortfolioSuccess: (_, { payload: repos }) => ({
             status: "success",
             repos,
-    }),
+        }),
     },
 });
 

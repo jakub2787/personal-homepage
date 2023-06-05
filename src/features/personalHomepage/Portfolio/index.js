@@ -20,7 +20,7 @@ const Portfolio = () => {
                 <Header>Portfolio</Header>
                 <Paragraph>My recent projects</Paragraph>
                 {status === "loading" ?
-                    <Loading/>
+                    <Loading />
                     : status === "success" ?
                         <RepositoriesList /> :
                         <p></p>}

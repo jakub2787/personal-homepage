@@ -1,4 +1,4 @@
-import Buttton from "./features/personalHomepage/ThemeSwitch/Index";
+import Buttton from "./features/personalHomepage/ThemeSwitch/index";
 import Container from "./features/personalHomepage/Container";
 import Section from "./features/personalHomepage/Section";
 import { ThemeProvider } from 'styled-components';
@@ -8,7 +8,8 @@ import { useSelector } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
 import SectionHeader from "./features/personalHomepage/SectionHeader";
 import Footer from "./features/personalHomepage/Footer";
-import Portfolio from "./features/personalHomepage/Portfolio";
+import Portfolio from "./features/personalHomepage/Portfolio/index";
+
 
 function App() {
   const isDarkMode = useSelector(selectIsDarkTheme);
@@ -20,7 +21,7 @@ function App() {
         <Buttton />
         <SectionHeader />
         <Section />
-        <Portfolio />
+        <Portfolio/>
         <Footer />
       </Container>
     </ThemeProvider>
