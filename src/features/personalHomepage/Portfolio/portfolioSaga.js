@@ -5,7 +5,7 @@ import { fetchPortfolioLoading, fetchPortfolioSuccess } from "./portfolioSlice";
 
 function* fetchPortfolioHandler() {
     try {
-        yield delay(1000);
+        yield delay(2000);
         const repositories = yield call(getPortfolio);
         yield put(fetchPortfolioSuccess(repositories));
     }

@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
 export const PortfolioIcon = styled(Icon)`
   display: grid;
   justify-self: center;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Header = styled.h3`

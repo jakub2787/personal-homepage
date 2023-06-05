@@ -3,6 +3,7 @@ import { Header, Paragraph, PortfolioIcon, Wrapper } from "./styled";
 import { fetchPortfolioLoading, selectStatus } from "./portfolioSlice";
 import { useEffect } from "react";
 import RepositoriesList from "./RepositoriesList";
+import Loading from "./Loading";
 
 const Portfolio = () => {
     const dispatch = useDispatch();
@@ -11,6 +12,7 @@ const Portfolio = () => {
     useEffect(() => {
         dispatch((fetchPortfolioLoading()))
     }, [dispatch])
+
     return (
         <>
             <Wrapper>
@@ -18,14 +20,12 @@ const Portfolio = () => {
                 <Header>Portfolio</Header>
                 <Paragraph>My recent projects</Paragraph>
                 {status === "loading" ?
-                    <div></div>
+                    <Loading/>
                     : status === "success" ?
                         <RepositoriesList /> :
                         <p></p>}
             </Wrapper>
         </>
-
-
     );
 };
 
