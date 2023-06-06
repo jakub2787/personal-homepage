@@ -23,6 +23,10 @@ export const Header = styled.h3`
   font-weight: 900;
   font-size: 30px;
   margin-top: 13px;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 18px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -32,4 +36,8 @@ export const Paragraph = styled.p`
   margin: 0px;
   display: grid;
   justify-content: center;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 17px;
+  }
 `;

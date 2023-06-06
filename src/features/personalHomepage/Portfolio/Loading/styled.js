@@ -4,6 +4,10 @@ import { ReactComponent as Icon } from "../../images/icon-spinner.svg";
 export const Info = styled.p`
   margin-top: 88px;
   color: ${({ theme }) => theme.colors.textPrimary};
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 17px;
+  }
 `;
 
 export const LoadingSpinner = styled(Icon)`

@@ -1,4 +1,3 @@
-import Buttton from "./features/personalHomepage/ThemeSwitch/index";
 import Container from "./features/personalHomepage/Container";
 import Section from "./features/personalHomepage/Section";
 import { ThemeProvider } from 'styled-components';
@@ -18,10 +17,9 @@ function App() {
     <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Container>
-        <Buttton />
         <SectionHeader />
         <Section />
-        <Portfolio/>
+        <Portfolio />
         <Footer />
       </Container>
     </ThemeProvider>

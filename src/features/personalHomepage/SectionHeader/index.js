@@ -1,9 +1,11 @@
 import { Image, Content, Header, Info, Text, Container, MailButton, MailIcon } from "./styled";
 import AutorPhoto from "../images/AuthorPhoto.jpg";
+import ThemeSwitch from "../ThemeSwitch";
 
 const SectionHeader = () => {
     return (
         <>
+            <ThemeSwitch />
             <Container>
                 <Image src={AutorPhoto} alt="Zdjęcie autora"></Image>
                 <Content>

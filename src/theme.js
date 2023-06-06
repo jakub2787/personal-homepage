@@ -20,7 +20,7 @@ const colorName = {
 const commonTheme = {
     breakpoint: {
         mobileMax: 776,
-        tabletMax: 1124,
+        tabletMax: 1200,
         tabletMin: 777,
     },
 };

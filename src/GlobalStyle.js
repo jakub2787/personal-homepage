@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
+        word-break: break-word;
         letter-spacing: 0.05em;
         color: ${({ theme }) => theme.colors.site.text};
         transition: 1s;

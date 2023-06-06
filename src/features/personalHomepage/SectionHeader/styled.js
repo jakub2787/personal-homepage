@@ -1,11 +1,27 @@
 import styled from "styled-components";
 import { ReactComponent as Icon } from '../images/Message.svg';
 
+export const Container = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  gap: 64px;
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px ;
+}
+`;
+
 export const Image = styled.img`
   border-radius: 50%;
   margin-top: 20px;
   max-width: 398px;
   width: 30vw;
+`;
+
+export const Content = styled.div`
 `;
 
 export const Info = styled.p`
@@ -20,9 +36,10 @@ export const Header = styled.h1`
   font-size: 38px;
   color: ${({ theme }) => theme.colors.textPrimary};
   margin: 12px 0 0 0;
-`;
 
-export const Content = styled.div`
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    font-size: 22px;
+}
 `;
 
 export const Text = styled.p`
@@ -32,19 +49,6 @@ export const Text = styled.p`
 
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
     margin: 16px 0 0 0; 
-}
-`;
-
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 64px;
-
-  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 12px ;
 }
 `;
 
