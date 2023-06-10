@@ -8,9 +8,14 @@ export const List = styled.ul`
   padding: 0;
   margin-top: 32px;
 
-    @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) and (min-width:${({ theme }) => theme.breakpoint.tabletMin}px) {
+  @media (max-width:${({ theme }) => theme.breakpoint.tabletMax}px) and (min-width:${({ theme }) => theme.breakpoint.tabletMin}px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 `;
 
@@ -18,7 +23,7 @@ export const ListItem = styled.li`
   list-style: none;
 
   @media (max-width:${({ theme }) => theme.breakpoint.mobileMax}px) {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
   &::before {
