@@ -9,7 +9,6 @@ import SectionHeader from "./features/personalHomepage/SectionHeader";
 import Footer from "./features/personalHomepage/Footer";
 import Portfolio from "./features/personalHomepage/Portfolio/index";
 
-
 function App() {
   const isDarkMode = useSelector(selectIsDarkTheme);
 
