@@ -57,6 +57,7 @@ export const lightTheme = {
             borderLink: colorName.scienceBlueLighter,
             linkHover: colorName.scienceBlue,
         },
+        buttonErrorColor: colorName.white,
     },
 };
 
@@ -92,5 +93,6 @@ export const darkTheme = {
             borderLink: colorName.scienceBlueDarker,
             linkHover: colorName.cornflowerBlue,
         },
+        buttonErrorColor: colorName.white,
     },
 };
