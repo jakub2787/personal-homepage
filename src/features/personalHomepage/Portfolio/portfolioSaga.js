@@ -1,7 +1,6 @@
 import { call, delay, put, takeLatest } from "redux-saga/effects";
 import { getPortfolio } from "./getPortfolio";
-import { fetchPortfolioLoading, fetchPortfolioSuccess } from "./portfolioSlice";
-
+import { fetchPortfolioLoading, fetchPortfolioSuccess, fetchPortfolioError } from "./portfolioSlice";
 
 function* fetchPortfolioHandler() {
     try {
@@ -10,8 +9,8 @@ function* fetchPortfolioHandler() {
         yield put(fetchPortfolioSuccess(repositories));
     }
 
-    catch (error) {
-        yield call(alert, "Błąd pobierania, spróbuj ponownie później");
+    catch { 
+        yield put(fetchPortfolioError());
     }
 }
 

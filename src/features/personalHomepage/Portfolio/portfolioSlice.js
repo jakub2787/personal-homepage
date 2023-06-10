@@ -4,23 +4,27 @@ export const portfolioSlice = createSlice({
     name: "portfolio",
     initialState: {
         repos: null,
-        status: "initial"
+        status: "initial",
     },
     reducers: {
         fetchPortfolioLoading: () => ({
             status: "loading",
-            repositories: null,
+            repos: null,
         }),
         fetchPortfolioSuccess: (_, { payload: repos }) => ({
             status: "success",
             repos,
         }),
+        fetchPortfolioError: () => ({
+            status: "error",    
+        })
     },
 });
 
 export const {
     fetchPortfolioSuccess,
     fetchPortfolioLoading,
+    fetchPortfolioError,
 } = portfolioSlice.actions
 
 export const selectPortfolioState = (state) => state.portfolio;
