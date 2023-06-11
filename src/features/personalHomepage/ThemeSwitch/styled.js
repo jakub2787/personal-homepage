@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as Icon } from '../images/buttonIcon.svg';
+import { ReactComponent as Icon } from '../../../common/images/buttonIcon.svg';
 
 export const Container = styled.div`
   display: inline;

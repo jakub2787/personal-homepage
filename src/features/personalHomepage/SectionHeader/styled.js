@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Icon } from '../images/Message.svg';
+import { ReactComponent as Icon } from '../../../common/images/Message.svg';
 
 export const Container = styled.div`
   display: grid;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Icon } from "../../images/icon-spinner.svg";
+import { ReactComponent as Icon } from "../../../../common/images/icon-spinner.svg";
 
 export const Info = styled.p`
   margin-top: 88px;

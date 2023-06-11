@@ -1,5 +1,5 @@
-import SkillsList from "../Skills";
-import { skillsList, nextSkills } from "../Skills/skillsData";
+import SkillsList from "../../features/personalHomepage/Skills";
+import { skillsList, nextSkills } from "../../features/personalHomepage/Skills/skillsData";
 
 const Section = () => {
     return (

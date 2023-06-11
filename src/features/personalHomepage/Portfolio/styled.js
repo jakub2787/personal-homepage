@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Icon } from '../images/mark-github.svg';
+import { ReactComponent as Icon } from '../../../common/images/mark-github.svg';
 
 export const Wrapper = styled.div`
   margin: 72px 0px 0px 0px;
