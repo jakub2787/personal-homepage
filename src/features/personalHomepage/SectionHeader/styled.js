@@ -66,6 +66,7 @@ export const MailButton = styled.a`
   color: ${({ theme }) => theme.colors.buttonLink.text};
   text-decoration: none;
   background-color: ${({ theme }) => theme.colors.buttonLink.background};
+  transition: 1s;
   
   &:hover {
     box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonLink.border};

@@ -18,6 +18,7 @@ export const ListItem = styled.li`
 export const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.colors.textPrimary};
+  transition: 1s;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};

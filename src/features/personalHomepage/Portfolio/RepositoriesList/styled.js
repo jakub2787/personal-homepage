@@ -22,10 +22,10 @@ export const ListItem = styled.li`
   margin: 0px;
   max-width: 575px;
   padding: 50px;
+  transition: 1s;
 
   &:hover {
     border: 6px solid ${({ theme }) => theme.colors.repositoriesList.borderHover};
-    transition: 1s;
     }
 `;
 

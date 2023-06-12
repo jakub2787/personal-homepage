@@ -16,7 +16,8 @@ export const Mail = styled.a`
   font-size: 32px;
   color: ${({ theme }) => theme.colors.textPrimary};
   text-decoration: none;
-
+  transition: 1s;
+  
   &:hover {
         color: ${({ theme }) => theme.colors.primary};
     }
