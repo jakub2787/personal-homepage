@@ -3,20 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 export const portfolioSlice = createSlice({
     name: "portfolio",
     initialState: {
-        repos: null,
+        repos: {},
         status: "initial",
     },
     reducers: {
         fetchPortfolioLoading: () => ({
             status: "loading",
-            repos: null,
         }),
         fetchPortfolioSuccess: (_, { payload: repos }) => ({
             status: "success",
             repos,
         }),
         fetchPortfolioError: () => ({
-            status: "error",    
+            status: "error",
         })
     },
 });

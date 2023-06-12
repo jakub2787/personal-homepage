@@ -15,18 +15,16 @@ const Portfolio = () => {
     }, [dispatch]);
 
     return (
-        <>
-            <Wrapper>
-                <PortfolioIcon />
-                <Header>Portfolio</Header>
-                <Paragraph>My recent projects</Paragraph>
-                {status === "loading" ?
-                    <Loading />
-                    : status === "success" ?
-                        <RepositoriesList /> : 
-                        <Error />}
-            </Wrapper>
-        </>
+        <Wrapper>
+            <PortfolioIcon />
+            <Header>Portfolio</Header>
+            <Paragraph>My recent projects</Paragraph>
+            {status === "loading" ?
+                <Loading />
+                : status === "success" ?
+                    <RepositoriesList /> :
+                    <Error />}
+        </Wrapper>
     );
 };
 

@@ -8,8 +8,7 @@ function* fetchPortfolioHandler() {
         const repositories = yield call(getPortfolio);
         yield put(fetchPortfolioSuccess(repositories));
     }
-
-    catch { 
+    catch {
         yield put(fetchPortfolioError());
     }
 }

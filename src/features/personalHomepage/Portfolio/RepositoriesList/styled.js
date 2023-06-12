@@ -14,6 +14,7 @@ export const List = styled.ul`
     gap: 16px;
   }
 `;
+
 export const ListItem = styled.li`
   background-color: ${({ theme }) => theme.colors.boxBackground};
   border: 6px solid ${({ theme }) => theme.colors.repositoriesList.border};

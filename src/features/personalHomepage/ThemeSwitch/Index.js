@@ -7,16 +7,14 @@ const ThemeSwitch = () => {
     const isDarkMode = useSelector(selectIsDarkTheme);
 
     return (
-        <>
-            <Container>
-                <ButtonText>Dark mode {isDarkMode ? "on" : "off"}</ButtonText>
-                <StyledButton onClick={() => (dispatch(toggleTheme()))}>
-                    <Box moveSwitch={isDarkMode} >
-                        <ButtonIcon />
-                    </Box>
-                </StyledButton>
-            </Container>
-        </>
+        <Container>
+            <ButtonText>Dark mode {isDarkMode ? "on" : "off"}</ButtonText>
+            <StyledButton onClick={() => (dispatch(toggleTheme()))}>
+                <Box moveSwitch={isDarkMode} >
+                    <ButtonIcon />
+                </Box>
+            </StyledButton>
+        </Container>
     )
 };
 export default ThemeSwitch;
